@@ -17,18 +17,16 @@ Pod::Spec.new do |spec|
 
   spec.name         = "ResponderChain"
   spec.version      = "0.0.1"
-  spec.summary      = "A short description of ResponderChain."
-
+  spec.summary      = "ResponderChain is a library that passes events using the responder chain."
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = <<-DESC
-                   DESC
+  spec.description  = "In Cocoa's development model, events can be delivered using delegate, block, and notification. Usually a delegate or block is used to pass events between a ViewController and a View, However, when a deep nested view needs to pass events to the ViewController, using a delegate or block might require passing them layer by layer. Now, events can be passed in one step, regardless of how deep the view hierarchy is, using the ResponderChain.""
 
-  spec.homepage     = "http://EXAMPLE/ResponderChain"
-  # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
+  spec.homepage     = "https://github.com/GodL/ResponderChain"
+  # spec.screenshots  = "www.githud.com/screenshots_1.gif", "www.githud.com/screenshots_2.gif"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -38,7 +36,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
+  spec.license      = "MIT"
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -79,7 +77,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/ResponderChain.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/xuyutang/ResponderChain.git", :tag => "1.0.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,7 +88,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
+  spec.source_files  = "ResponderChain", "ResponderChain/**/*.{h,m}"
   spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
