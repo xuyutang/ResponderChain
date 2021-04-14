@@ -23,8 +23,7 @@ Pod::Spec.new do |spec|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = "In Cocoa's development model, events can be delivered using delegate, block, and notification. Usually a delegate or block is used to pass events between a ViewController and a View, However, when a deep nested view needs to pass events to the ViewController, using a delegate or block might require passing them layer by layer. Now, events can be passed in one step, regardless of how deep the view hierarchy is, using the ResponderChain.""
-
+  spec.description  = "In Cocoa's development model, events can be delivered using delegate, block, and notification. Usually a delegate or block is used to pass events between a ViewController and a View, However, when a deep nested view needs to pass events to the ViewController, using a delegate or block might require passing them layer by layer. Now, events can be passed in one step, regardless of how deep the view hierarchy is, using the ResponderChain."
   spec.homepage     = "https://github.com/GodL/ResponderChain"
   # spec.screenshots  = "www.githud.com/screenshots_1.gif", "www.githud.com/screenshots_2.gif"
 
@@ -88,7 +87,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "ResponderChain", "ResponderChain/**/*.{h,m}"
+  spec.source_files  = "Sources/**/*.{h,m}"
   spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
